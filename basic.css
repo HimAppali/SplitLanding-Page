@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.grid-container {
+  display: flex;
+  height: 100vh;
+}
+.grid-container .grid-items {
+  width: 50%;
+  text-align: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+}
+.grid-container .grid-items h1 {
+  font-size: 4rem;
+  position: relative;
+}
+.grid-container .grid-items button {
+  color: #fff;
+  background-color: transparent;
+  border: 3px solid #fff;
+  padding: 1.5rem;
+  font-weight: bold;
+  width: 50%;
+  position: relative;
+}
+.grid-container .col1 {
+  background-image: url(ps.jpg);
+  flex: 50%;
+  position: relative;
+}
+.grid-container .col2 {
+  background-image: url(xbox.jpg);
+  flex: 50%;
+  position: relative;
+}
+.grid-container .col1::before, .grid-container .col2::before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+.grid-container .col1::before {
+  background-color: rgba(87, 84, 236, 0.7);
+}
+.grid-container .col2::before {
+  background-color: rgba(43, 43, 43, 0.8);
+}
+.grid-container .flexGrow {
+  flex: 120%;
+  transition: flex 1s ease-in;
+}/*# sourceMappingURL=basic.css.map */
